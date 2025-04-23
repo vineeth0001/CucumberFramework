@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+	<Appenders>
+		<!-- File appender with scenario name (fallback to default) -->
+		<RollingFile name="ScenarioLogger"
+			fileName="logs/${sys:scenario.name:-default}.log"
+			filePattern="logs/${sys:scenario.name:-default}-%d{yyyy-MM-dd-HH-mm-ss}-%i.log.gz">
+			<PatternLayout>
+				<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n</pattern>
+			</PatternLayout>
+			<Policies>
+				<SizeBasedTriggeringPolicy size="1MB" />
+			</Policies>
+			<DefaultRolloverStrategy max="10" />
+		</RollingFile>
+
+		<!-- Console logs -->
+		<Console name="ConsoleLogger" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="%d{HH:mm:ss.SSS} %-5level %logger{36} - %msg%n" />
+		</Console>
+	</Appenders>
+
+	<Loggers>
+		<!-- Specific logger for the filter (still useful) -->
+		<Logger name="io.resources.Log4jFilter" level="debug" additivity="false">
+			<AppenderRef ref="ScenarioLogger" />
+		</Logger>
+
+		<!-- ✅ New logger for all step definitions or entire framework -->
+		<!-- Logger for the specific "io.stepDefinitions" package -->
+	<!--	<Logger name="io.stepDefinitions" level="debug" additivity="false">
+			<AppenderRef ref="ScenarioLogger" />
+			<AppenderRef ref="ConsoleLogger" /> 
+		</Logger> -->
+		<!-- Logger for the entire "io" package and its subpackages -->
+		<!--	<Logger name="io" level="debug" additivity="false">
+			<AppenderRef ref="ScenarioLogger" />
+			<AppenderRef ref="ConsoleLogger" />
+		</Logger>  -->
+
+		<!-- ✅ Or use this if you want to catch everything without declaring
+		individual packages -->
+		<Root level="debug">
+			<AppenderRef ref="ScenarioLogger" />
+			<!-- Uncomment below if you want logs to show in console too -->
+			<!--    <AppenderRef ref="ConsoleLogger" /> -->
+		</Root>
+	</Loggers>
+</Configuration>

@@ -1,0 +1,418 @@
+2025-04-23 10:00:46.960 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-04-23 10:00:46.965 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2025-04-23 10:00:46.966 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+2025-04-23 10:00:46.968 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-04-23 10:00:47.374 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+2025-04-23 10:00:47.375 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-04-23 10:00:47.375 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-04-23 10:00:48.132 [main] INFO  io.log.Log4jFilter - ---- REQUEST ----
+2025-04-23 10:00:48.134 [main] INFO  io.log.Log4jFilter - URI: https://rahulshettyacademy.com/api/ecom/auth/login
+2025-04-23 10:00:48.134 [main] INFO  io.log.Log4jFilter - Method: POST
+2025-04-23 10:00:48.135 [main] INFO  io.log.Log4jFilter - Headers: Accept=*/*
+Content-Type=application/json
+2025-04-23 10:00:48.135 [main] INFO  io.log.Log4jFilter - Body: {"userEmail":"vineethreddy.k@gmail.com","userPassword":"Saanvi@143"}
+2025-04-23 10:00:49.070 [main] INFO  io.log.Log4jFilter - ---- RESPONSE ----
+2025-04-23 10:00:49.070 [main] INFO  io.log.Log4jFilter - Status Code: 200
+2025-04-23 10:00:49.070 [main] INFO  io.log.Log4jFilter - Headers: Date=Wed, 23 Apr 2025 04:30:53 GMT
+Server=Apache/2.4.52 (Ubuntu)
+Content-Security-Policy=default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control=off
+Expect-CT=max-age=0
+X-Frame-Options=SAMEORIGIN
+Strict-Transport-Security=max-age=15552000; includeSubDomains
+X-Download-Options=noopen
+X-Content-Type-Options=nosniff
+X-Permitted-Cross-Domain-Policies=none
+Referrer-Policy=no-referrer
+X-XSS-Protection=0
+Access-Control-Allow-Origin=*
+Content-Type=application/json; charset=utf-8
+Content-Length=364
+ETag=W/"16c-0v1b8OsETKg7/IyWZdN4KkTRJ/8"
+Vary=Accept-Encoding
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+2025-04-23 10:00:49.112 [main] INFO  io.log.Log4jFilter - Body: {
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGJmNjNjYjcyNDQ0OTBmOTU4YWVkMGQiLCJ1c2VyRW1haWwiOiJ2aW5lZXRocmVkZHkua0BnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5ODc0NTYxMjMwLCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ1MzgyNjUzLCJleHAiOjE3NzY5NDAyNTN9.yx0OZTUzYn9Y2MWGKSdpwBmJpWPhjucNU5elNazZuCE",
+    "userId": "64bf63cb7244490f958aed0d",
+    "message": "Login Successfully"
+}
+2025-04-23 10:00:49.652 [main] INFO  io.website.EcommerceWebsite - response token is : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGJmNjNjYjcyNDQ0OTBmOTU4YWVkMGQiLCJ1c2VyRW1haWwiOiJ2aW5lZXRocmVkZHkua0BnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5ODc0NTYxMjMwLCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ1MzgyNjUzLCJleHAiOjE3NzY5NDAyNTN9.yx0OZTUzYn9Y2MWGKSdpwBmJpWPhjucNU5elNazZuCE
+2025-04-23 10:00:49.706 [main] INFO  io.log.Log4jFilter - ---- REQUEST ----
+2025-04-23 10:00:49.707 [main] INFO  io.log.Log4jFilter - URI: https://rahulshettyacademy.com/api/ecom/product/add-product
+2025-04-23 10:00:49.707 [main] INFO  io.log.Log4jFilter - Method: POST
+2025-04-23 10:00:49.707 [main] INFO  io.log.Log4jFilter - Headers: Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGJmNjNjYjcyNDQ0OTBmOTU4YWVkMGQiLCJ1c2VyRW1haWwiOiJ2aW5lZXRocmVkZHkua0BnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5ODc0NTYxMjMwLCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ1MzgyNjUzLCJleHAiOjE3NzY5NDAyNTN9.yx0OZTUzYn9Y2MWGKSdpwBmJpWPhjucNU5elNazZuCE
+Accept=*/*
+Content-Type=multipart/form-data
+2025-04-23 10:00:49.956 [main] INFO  io.log.Log4jFilter - ---- RESPONSE ----
+2025-04-23 10:00:49.957 [main] INFO  io.log.Log4jFilter - Status Code: 201
+2025-04-23 10:00:49.957 [main] INFO  io.log.Log4jFilter - Headers: Date=Wed, 23 Apr 2025 04:30:54 GMT
+Server=Apache/2.4.52 (Ubuntu)
+Content-Security-Policy=default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control=off
+Expect-CT=max-age=0
+X-Frame-Options=SAMEORIGIN
+Strict-Transport-Security=max-age=15552000; includeSubDomains
+X-Download-Options=noopen
+X-Content-Type-Options=nosniff
+X-Permitted-Cross-Domain-Policies=none
+Referrer-Policy=no-referrer
+X-XSS-Protection=0
+Access-Control-Allow-Origin=*
+Content-Type=application/json; charset=utf-8
+Content-Length=79
+ETag=W/"4f-B6SMqgLUmSC4jW4gFuiTSIJS7YQ"
+Vary=Accept-Encoding
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+2025-04-23 10:00:49.958 [main] INFO  io.log.Log4jFilter - Body: {
+    "productId": "68086cfefc76541aad3bc840",
+    "message": "Product Added Successfully"
+}
+2025-04-23 10:00:50.009 [main] INFO  io.log.Log4jFilter - ---- REQUEST ----
+2025-04-23 10:00:50.010 [main] INFO  io.log.Log4jFilter - URI: https://rahulshettyacademy.com/api/ecom/user/add-to-cart
+2025-04-23 10:00:50.010 [main] INFO  io.log.Log4jFilter - Method: POST
+2025-04-23 10:00:50.010 [main] INFO  io.log.Log4jFilter - Headers: Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGJmNjNjYjcyNDQ0OTBmOTU4YWVkMGQiLCJ1c2VyRW1haWwiOiJ2aW5lZXRocmVkZHkua0BnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5ODc0NTYxMjMwLCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ1MzgyNjUzLCJleHAiOjE3NzY5NDAyNTN9.yx0OZTUzYn9Y2MWGKSdpwBmJpWPhjucNU5elNazZuCE
+Accept=*/*
+Content-Type=application/json
+2025-04-23 10:00:50.010 [main] INFO  io.log.Log4jFilter - Body: {"_id":"64bf63cb7244490f958aed0d","product":{"_id":"68086cfefc76541aad3bc840","productName":"Laptop","productCategory":"Electronics","productSubCategory":"Devices","productPrice":11500,"productDescription":"Asus Laptop","productImage":"https://rahulshettyacademy.com/api/ecom/uploads/productImage_1700658506971.jpg","productRating":"0","productTotalOrders":"0","productStatus":"true","productFor":"women","productAddedBy":"64bf63cb7244490f958aed0d","__v":0}}
+2025-04-23 10:00:50.099 [main] INFO  io.log.Log4jFilter - ---- RESPONSE ----
+2025-04-23 10:00:50.099 [main] INFO  io.log.Log4jFilter - Status Code: 200
+2025-04-23 10:00:50.100 [main] INFO  io.log.Log4jFilter - Headers: Date=Wed, 23 Apr 2025 04:30:54 GMT
+Server=Apache/2.4.52 (Ubuntu)
+Content-Security-Policy=default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control=off
+Expect-CT=max-age=0
+X-Frame-Options=SAMEORIGIN
+Strict-Transport-Security=max-age=15552000; includeSubDomains
+X-Download-Options=noopen
+X-Content-Type-Options=nosniff
+X-Permitted-Cross-Domain-Policies=none
+Referrer-Policy=no-referrer
+X-XSS-Protection=0
+Access-Control-Allow-Origin=*
+Content-Type=application/json; charset=utf-8
+Content-Length=35
+ETag=W/"23-B9Z7UugfjZ3l8MVqL2ZBFWMv0R4"
+Vary=Accept-Encoding
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+2025-04-23 10:00:50.100 [main] INFO  io.log.Log4jFilter - Body: {
+    "message": "Product Added To Cart"
+}
+2025-04-23 10:00:50.116 [main] INFO  io.log.Log4jFilter - ---- REQUEST ----
+2025-04-23 10:00:50.118 [main] INFO  io.log.Log4jFilter - URI: https://rahulshettyacademy.com/api/ecom/order/create-order
+2025-04-23 10:00:50.118 [main] INFO  io.log.Log4jFilter - Method: POST
+2025-04-23 10:00:50.118 [main] INFO  io.log.Log4jFilter - Headers: Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGJmNjNjYjcyNDQ0OTBmOTU4YWVkMGQiLCJ1c2VyRW1haWwiOiJ2aW5lZXRocmVkZHkua0BnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5ODc0NTYxMjMwLCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ1MzgyNjUzLCJleHAiOjE3NzY5NDAyNTN9.yx0OZTUzYn9Y2MWGKSdpwBmJpWPhjucNU5elNazZuCE
+Accept=*/*
+Content-Type=application/json
+2025-04-23 10:00:50.118 [main] INFO  io.log.Log4jFilter - Body: {"orders":[{"country":"India","productOrderedId":"68086cfefc76541aad3bc840"}]}
+2025-04-23 10:00:50.222 [main] INFO  io.log.Log4jFilter - ---- RESPONSE ----
+2025-04-23 10:00:50.222 [main] INFO  io.log.Log4jFilter - Status Code: 201
+2025-04-23 10:00:50.222 [main] INFO  io.log.Log4jFilter - Headers: Date=Wed, 23 Apr 2025 04:30:54 GMT
+Server=Apache/2.4.52 (Ubuntu)
+Content-Security-Policy=default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control=off
+Expect-CT=max-age=0
+X-Frame-Options=SAMEORIGIN
+Strict-Transport-Security=max-age=15552000; includeSubDomains
+X-Download-Options=noopen
+X-Content-Type-Options=nosniff
+X-Permitted-Cross-Domain-Policies=none
+Referrer-Policy=no-referrer
+X-XSS-Protection=0
+Access-Control-Allow-Origin=*
+Content-Type=application/json; charset=utf-8
+Content-Length=123
+ETag=W/"7b-u8c3PjwjaUGqRsM3FsxvK/Ys7EM"
+Vary=Accept-Encoding
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+2025-04-23 10:00:50.222 [main] INFO  io.log.Log4jFilter - Body: {
+    "orders": [
+        "68086cfefc76541aad3bc848"
+    ],
+    "productOrderId": [
+        "68086cfefc76541aad3bc840"
+    ],
+    "message": "Order Placed Successfully"
+}
+2025-04-23 10:00:50.292 [main] INFO  io.log.Log4jFilter - ---- REQUEST ----
+2025-04-23 10:00:50.293 [main] INFO  io.log.Log4jFilter - URI: https://rahulshettyacademy.com/api/ecom/order/get-orders-details?id=68086cfefc76541aad3bc848
+2025-04-23 10:00:50.293 [main] INFO  io.log.Log4jFilter - Method: GET
+2025-04-23 10:00:50.293 [main] INFO  io.log.Log4jFilter - Headers: Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGJmNjNjYjcyNDQ0OTBmOTU4YWVkMGQiLCJ1c2VyRW1haWwiOiJ2aW5lZXRocmVkZHkua0BnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5ODc0NTYxMjMwLCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ1MzgyNjUzLCJleHAiOjE3NzY5NDAyNTN9.yx0OZTUzYn9Y2MWGKSdpwBmJpWPhjucNU5elNazZuCE
+Accept=*/*
+2025-04-23 10:00:50.394 [main] INFO  io.log.Log4jFilter - ---- RESPONSE ----
+2025-04-23 10:00:50.394 [main] INFO  io.log.Log4jFilter - Status Code: 200
+2025-04-23 10:00:50.394 [main] INFO  io.log.Log4jFilter - Headers: Date=Wed, 23 Apr 2025 04:30:54 GMT
+Server=Apache/2.4.52 (Ubuntu)
+Content-Security-Policy=default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control=off
+Expect-CT=max-age=0
+X-Frame-Options=SAMEORIGIN
+Strict-Transport-Security=max-age=15552000; includeSubDomains
+X-Download-Options=noopen
+X-Content-Type-Options=nosniff
+X-Permitted-Cross-Domain-Policies=none
+Referrer-Policy=no-referrer
+X-XSS-Protection=0
+Access-Control-Allow-Origin=*
+Content-Type=application/json; charset=utf-8
+Content-Length=419
+ETag=W/"1a3-9WTPk18Emvrznm9F2mZ/W/nR7AI"
+Vary=Accept-Encoding
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+2025-04-23 10:00:50.396 [main] INFO  io.log.Log4jFilter - Body: {
+    "data": {
+        "_id": "68086cfefc76541aad3bc848",
+        "orderById": "64bf63cb7244490f958aed0d",
+        "orderBy": "vineethreddy.k@gmail.com",
+        "productOrderedId": "68086cfefc76541aad3bc840",
+        "productName": "Laptop",
+        "country": "India",
+        "productDescription": "Asus Laptop",
+        "productImage": "https://rahulshettyacademy.com/api/ecom/uploads/productImage_1745382654053.jpg",
+        "orderPrice": "11500",
+        "__v": 0
+    },
+    "message": "Orders fetched for customer Successfully"
+}
+2025-04-23 10:00:50.427 [main] INFO  io.log.Log4jFilter - ---- REQUEST ----
+2025-04-23 10:00:50.429 [main] INFO  io.log.Log4jFilter - URI: https://rahulshettyacademy.com/api/ecom/product/delete-product/68086cfefc76541aad3bc840
+2025-04-23 10:00:50.429 [main] INFO  io.log.Log4jFilter - Method: DELETE
+2025-04-23 10:00:50.429 [main] INFO  io.log.Log4jFilter - Headers: Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGJmNjNjYjcyNDQ0OTBmOTU4YWVkMGQiLCJ1c2VyRW1haWwiOiJ2aW5lZXRocmVkZHkua0BnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5ODc0NTYxMjMwLCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ1MzgyNjUzLCJleHAiOjE3NzY5NDAyNTN9.yx0OZTUzYn9Y2MWGKSdpwBmJpWPhjucNU5elNazZuCE
+Accept=*/*
+2025-04-23 10:00:50.530 [main] INFO  io.log.Log4jFilter - ---- RESPONSE ----
+2025-04-23 10:00:50.530 [main] INFO  io.log.Log4jFilter - Status Code: 200
+2025-04-23 10:00:50.530 [main] INFO  io.log.Log4jFilter - Headers: Date=Wed, 23 Apr 2025 04:30:54 GMT
+Server=Apache/2.4.52 (Ubuntu)
+Content-Security-Policy=default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control=off
+Expect-CT=max-age=0
+X-Frame-Options=SAMEORIGIN
+Strict-Transport-Security=max-age=15552000; includeSubDomains
+X-Download-Options=noopen
+X-Content-Type-Options=nosniff
+X-Permitted-Cross-Domain-Policies=none
+Referrer-Policy=no-referrer
+X-XSS-Protection=0
+Access-Control-Allow-Origin=*
+Content-Type=application/json; charset=utf-8
+Content-Length=42
+ETag=W/"2a-2mOwR6FOFcYds+NaVy6wWIOyKCY"
+Vary=Accept-Encoding
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+2025-04-23 10:00:50.531 [main] INFO  io.log.Log4jFilter - Body: {
+    "message": "Product Deleted Successfully"
+}
+2025-04-23 10:01:49.522 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-04-23 10:01:49.528 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+2025-04-23 10:01:49.529 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet4.xml.rels
+2025-04-23 10:01:49.530 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+2025-04-23 10:01:49.909 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.microsoft.com/office/2017/10/relationships/person
+2025-04-23 10:01:49.910 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-04-23 10:01:49.910 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2025-04-23 10:01:50.555 [main] INFO  io.log.Log4jFilter - ---- REQUEST ----
+2025-04-23 10:01:50.559 [main] INFO  io.log.Log4jFilter - URI: https://rahulshettyacademy.com/api/ecom/auth/login
+2025-04-23 10:01:50.559 [main] INFO  io.log.Log4jFilter - Method: POST
+2025-04-23 10:01:50.559 [main] INFO  io.log.Log4jFilter - Headers: Accept=*/*
+Content-Type=application/json
+2025-04-23 10:01:50.561 [main] INFO  io.log.Log4jFilter - Body: {"userEmail":"vineethreddy.k@gmail.com","userPassword":"Saanvi@143"}
+2025-04-23 10:01:51.339 [main] INFO  io.log.Log4jFilter - ---- RESPONSE ----
+2025-04-23 10:01:51.339 [main] INFO  io.log.Log4jFilter - Status Code: 200
+2025-04-23 10:01:51.339 [main] INFO  io.log.Log4jFilter - Headers: Date=Wed, 23 Apr 2025 04:31:55 GMT
+Server=Apache/2.4.52 (Ubuntu)
+Content-Security-Policy=default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control=off
+Expect-CT=max-age=0
+X-Frame-Options=SAMEORIGIN
+Strict-Transport-Security=max-age=15552000; includeSubDomains
+X-Download-Options=noopen
+X-Content-Type-Options=nosniff
+X-Permitted-Cross-Domain-Policies=none
+Referrer-Policy=no-referrer
+X-XSS-Protection=0
+Access-Control-Allow-Origin=*
+Content-Type=application/json; charset=utf-8
+Content-Length=364
+ETag=W/"16c-d/mCXv6QaJW3qXXwnNnqRASsJhQ"
+Vary=Accept-Encoding
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+2025-04-23 10:01:51.384 [main] INFO  io.log.Log4jFilter - Body: {
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGJmNjNjYjcyNDQ0OTBmOTU4YWVkMGQiLCJ1c2VyRW1haWwiOiJ2aW5lZXRocmVkZHkua0BnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5ODc0NTYxMjMwLCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ1MzgyNzE1LCJleHAiOjE3NzY5NDAzMTV9.4UTIEUMMs2om_7tN118-WZUchGLuC7bzgLhwMn5LUWk",
+    "userId": "64bf63cb7244490f958aed0d",
+    "message": "Login Successfully"
+}
+2025-04-23 10:01:51.903 [main] INFO  io.website.EcommerceWebsite - response token is : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGJmNjNjYjcyNDQ0OTBmOTU4YWVkMGQiLCJ1c2VyRW1haWwiOiJ2aW5lZXRocmVkZHkua0BnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5ODc0NTYxMjMwLCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ1MzgyNzE1LCJleHAiOjE3NzY5NDAzMTV9.4UTIEUMMs2om_7tN118-WZUchGLuC7bzgLhwMn5LUWk
+2025-04-23 10:01:51.946 [main] INFO  io.log.Log4jFilter - ---- REQUEST ----
+2025-04-23 10:01:51.946 [main] INFO  io.log.Log4jFilter - URI: https://rahulshettyacademy.com/api/ecom/product/add-product
+2025-04-23 10:01:51.946 [main] INFO  io.log.Log4jFilter - Method: POST
+2025-04-23 10:01:51.946 [main] INFO  io.log.Log4jFilter - Headers: Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGJmNjNjYjcyNDQ0OTBmOTU4YWVkMGQiLCJ1c2VyRW1haWwiOiJ2aW5lZXRocmVkZHkua0BnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5ODc0NTYxMjMwLCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ1MzgyNzE1LCJleHAiOjE3NzY5NDAzMTV9.4UTIEUMMs2om_7tN118-WZUchGLuC7bzgLhwMn5LUWk
+Accept=*/*
+Content-Type=multipart/form-data
+2025-04-23 10:01:52.137 [main] INFO  io.log.Log4jFilter - ---- RESPONSE ----
+2025-04-23 10:01:52.137 [main] INFO  io.log.Log4jFilter - Status Code: 201
+2025-04-23 10:01:52.137 [main] INFO  io.log.Log4jFilter - Headers: Date=Wed, 23 Apr 2025 04:31:56 GMT
+Server=Apache/2.4.52 (Ubuntu)
+Content-Security-Policy=default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control=off
+Expect-CT=max-age=0
+X-Frame-Options=SAMEORIGIN
+Strict-Transport-Security=max-age=15552000; includeSubDomains
+X-Download-Options=noopen
+X-Content-Type-Options=nosniff
+X-Permitted-Cross-Domain-Policies=none
+Referrer-Policy=no-referrer
+X-XSS-Protection=0
+Access-Control-Allow-Origin=*
+Content-Type=application/json; charset=utf-8
+Content-Length=79
+ETag=W/"4f-mO0q9QDmAxdVx1lv7AE6YtmiiYE"
+Vary=Accept-Encoding
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+2025-04-23 10:01:52.138 [main] INFO  io.log.Log4jFilter - Body: {
+    "productId": "68086d3cfc76541aad3bc85c",
+    "message": "Product Added Successfully"
+}
+2025-04-23 10:01:52.180 [main] INFO  io.log.Log4jFilter - ---- REQUEST ----
+2025-04-23 10:01:52.180 [main] INFO  io.log.Log4jFilter - URI: https://rahulshettyacademy.com/api/ecom/user/add-to-cart
+2025-04-23 10:01:52.180 [main] INFO  io.log.Log4jFilter - Method: POST
+2025-04-23 10:01:52.180 [main] INFO  io.log.Log4jFilter - Headers: Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGJmNjNjYjcyNDQ0OTBmOTU4YWVkMGQiLCJ1c2VyRW1haWwiOiJ2aW5lZXRocmVkZHkua0BnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5ODc0NTYxMjMwLCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ1MzgyNzE1LCJleHAiOjE3NzY5NDAzMTV9.4UTIEUMMs2om_7tN118-WZUchGLuC7bzgLhwMn5LUWk
+Accept=*/*
+Content-Type=application/json
+2025-04-23 10:01:52.180 [main] INFO  io.log.Log4jFilter - Body: {"_id":"64bf63cb7244490f958aed0d","product":{"_id":"68086d3cfc76541aad3bc85c","productName":"Laptop","productCategory":"Electronics","productSubCategory":"Devices","productPrice":11500,"productDescription":"Asus Laptop","productImage":"https://rahulshettyacademy.com/api/ecom/uploads/productImage_1700658506971.jpg","productRating":"0","productTotalOrders":"0","productStatus":"true","productFor":"women","productAddedBy":"64bf63cb7244490f958aed0d","__v":0}}
+2025-04-23 10:01:52.271 [main] INFO  io.log.Log4jFilter - ---- RESPONSE ----
+2025-04-23 10:01:52.271 [main] INFO  io.log.Log4jFilter - Status Code: 200
+2025-04-23 10:01:52.271 [main] INFO  io.log.Log4jFilter - Headers: Date=Wed, 23 Apr 2025 04:31:56 GMT
+Server=Apache/2.4.52 (Ubuntu)
+Content-Security-Policy=default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control=off
+Expect-CT=max-age=0
+X-Frame-Options=SAMEORIGIN
+Strict-Transport-Security=max-age=15552000; includeSubDomains
+X-Download-Options=noopen
+X-Content-Type-Options=nosniff
+X-Permitted-Cross-Domain-Policies=none
+Referrer-Policy=no-referrer
+X-XSS-Protection=0
+Access-Control-Allow-Origin=*
+Content-Type=application/json; charset=utf-8
+Content-Length=35
+ETag=W/"23-B9Z7UugfjZ3l8MVqL2ZBFWMv0R4"
+Vary=Accept-Encoding
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+2025-04-23 10:01:52.272 [main] INFO  io.log.Log4jFilter - Body: {
+    "message": "Product Added To Cart"
+}
+2025-04-23 10:01:52.293 [main] INFO  io.log.Log4jFilter - ---- REQUEST ----
+2025-04-23 10:01:52.293 [main] INFO  io.log.Log4jFilter - URI: https://rahulshettyacademy.com/api/ecom/order/create-order
+2025-04-23 10:01:52.294 [main] INFO  io.log.Log4jFilter - Method: POST
+2025-04-23 10:01:52.294 [main] INFO  io.log.Log4jFilter - Headers: Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGJmNjNjYjcyNDQ0OTBmOTU4YWVkMGQiLCJ1c2VyRW1haWwiOiJ2aW5lZXRocmVkZHkua0BnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5ODc0NTYxMjMwLCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ1MzgyNzE1LCJleHAiOjE3NzY5NDAzMTV9.4UTIEUMMs2om_7tN118-WZUchGLuC7bzgLhwMn5LUWk
+Accept=*/*
+Content-Type=application/json
+2025-04-23 10:01:52.294 [main] INFO  io.log.Log4jFilter - Body: {"orders":[{"country":"India","productOrderedId":"68086d3cfc76541aad3bc85c"}]}
+2025-04-23 10:01:52.391 [main] INFO  io.log.Log4jFilter - ---- RESPONSE ----
+2025-04-23 10:01:52.391 [main] INFO  io.log.Log4jFilter - Status Code: 201
+2025-04-23 10:01:52.391 [main] INFO  io.log.Log4jFilter - Headers: Date=Wed, 23 Apr 2025 04:31:56 GMT
+Server=Apache/2.4.52 (Ubuntu)
+Content-Security-Policy=default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control=off
+Expect-CT=max-age=0
+X-Frame-Options=SAMEORIGIN
+Strict-Transport-Security=max-age=15552000; includeSubDomains
+X-Download-Options=noopen
+X-Content-Type-Options=nosniff
+X-Permitted-Cross-Domain-Policies=none
+Referrer-Policy=no-referrer
+X-XSS-Protection=0
+Access-Control-Allow-Origin=*
+Content-Type=application/json; charset=utf-8
+Content-Length=123
+ETag=W/"7b-Guj0aGXsJJZcI1APNZV1MRCVd8I"
+Vary=Accept-Encoding
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+2025-04-23 10:01:52.392 [main] INFO  io.log.Log4jFilter - Body: {
+    "orders": [
+        "68086d3cfc76541aad3bc864"
+    ],
+    "productOrderId": [
+        "68086d3cfc76541aad3bc85c"
+    ],
+    "message": "Order Placed Successfully"
+}
+2025-04-23 10:01:52.455 [main] INFO  io.log.Log4jFilter - ---- REQUEST ----
+2025-04-23 10:01:52.455 [main] INFO  io.log.Log4jFilter - URI: https://rahulshettyacademy.com/api/ecom/order/get-orders-details?id=68086d3cfc76541aad3bc864
+2025-04-23 10:01:52.456 [main] INFO  io.log.Log4jFilter - Method: GET
+2025-04-23 10:01:52.456 [main] INFO  io.log.Log4jFilter - Headers: Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGJmNjNjYjcyNDQ0OTBmOTU4YWVkMGQiLCJ1c2VyRW1haWwiOiJ2aW5lZXRocmVkZHkua0BnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5ODc0NTYxMjMwLCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ1MzgyNzE1LCJleHAiOjE3NzY5NDAzMTV9.4UTIEUMMs2om_7tN118-WZUchGLuC7bzgLhwMn5LUWk
+Accept=*/*
+2025-04-23 10:01:52.550 [main] INFO  io.log.Log4jFilter - ---- RESPONSE ----
+2025-04-23 10:01:52.550 [main] INFO  io.log.Log4jFilter - Status Code: 200
+2025-04-23 10:01:52.550 [main] INFO  io.log.Log4jFilter - Headers: Date=Wed, 23 Apr 2025 04:31:56 GMT
+Server=Apache/2.4.52 (Ubuntu)
+Content-Security-Policy=default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control=off
+Expect-CT=max-age=0
+X-Frame-Options=SAMEORIGIN
+Strict-Transport-Security=max-age=15552000; includeSubDomains
+X-Download-Options=noopen
+X-Content-Type-Options=nosniff
+X-Permitted-Cross-Domain-Policies=none
+Referrer-Policy=no-referrer
+X-XSS-Protection=0
+Access-Control-Allow-Origin=*
+Content-Type=application/json; charset=utf-8
+Content-Length=419
+ETag=W/"1a3-NMW3+QHggDMOlhyoBFeVwWZhdQc"
+Vary=Accept-Encoding
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+2025-04-23 10:01:52.551 [main] INFO  io.log.Log4jFilter - Body: {
+    "data": {
+        "_id": "68086d3cfc76541aad3bc864",
+        "orderById": "64bf63cb7244490f958aed0d",
+        "orderBy": "vineethreddy.k@gmail.com",
+        "productOrderedId": "68086d3cfc76541aad3bc85c",
+        "productName": "Laptop",
+        "country": "India",
+        "productDescription": "Asus Laptop",
+        "productImage": "https://rahulshettyacademy.com/api/ecom/uploads/productImage_1745382716239.jpg",
+        "orderPrice": "11500",
+        "__v": 0
+    },
+    "message": "Orders fetched for customer Successfully"
+}
+2025-04-23 10:01:52.573 [main] INFO  io.log.Log4jFilter - ---- REQUEST ----
+2025-04-23 10:01:52.574 [main] INFO  io.log.Log4jFilter - URI: https://rahulshettyacademy.com/api/ecom/product/delete-product/68086d3cfc76541aad3bc85c
+2025-04-23 10:01:52.574 [main] INFO  io.log.Log4jFilter - Method: DELETE
+2025-04-23 10:01:52.574 [main] INFO  io.log.Log4jFilter - Headers: Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGJmNjNjYjcyNDQ0OTBmOTU4YWVkMGQiLCJ1c2VyRW1haWwiOiJ2aW5lZXRocmVkZHkua0BnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5ODc0NTYxMjMwLCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzQ1MzgyNzE1LCJleHAiOjE3NzY5NDAzMTV9.4UTIEUMMs2om_7tN118-WZUchGLuC7bzgLhwMn5LUWk
+Accept=*/*
+2025-04-23 10:01:52.673 [main] INFO  io.log.Log4jFilter - ---- RESPONSE ----
+2025-04-23 10:01:52.673 [main] INFO  io.log.Log4jFilter - Status Code: 200
+2025-04-23 10:01:52.673 [main] INFO  io.log.Log4jFilter - Headers: Date=Wed, 23 Apr 2025 04:31:56 GMT
+Server=Apache/2.4.52 (Ubuntu)
+Content-Security-Policy=default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-DNS-Prefetch-Control=off
+Expect-CT=max-age=0
+X-Frame-Options=SAMEORIGIN
+Strict-Transport-Security=max-age=15552000; includeSubDomains
+X-Download-Options=noopen
+X-Content-Type-Options=nosniff
+X-Permitted-Cross-Domain-Policies=none
+Referrer-Policy=no-referrer
+X-XSS-Protection=0
+Access-Control-Allow-Origin=*
+Content-Type=application/json; charset=utf-8
+Content-Length=42
+ETag=W/"2a-2mOwR6FOFcYds+NaVy6wWIOyKCY"
+Vary=Accept-Encoding
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+2025-04-23 10:01:52.674 [main] INFO  io.log.Log4jFilter - Body: {
+    "message": "Product Deleted Successfully"
+}

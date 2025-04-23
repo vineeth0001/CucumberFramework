@@ -1,0 +1,8 @@
+io\Pojo\LoginResponse.class
+io\Pojo\AddToCartRequest.class
+io\Pojo\CreateOrderResponse.class
+io\Pojo\CreateOrderReq.class
+io\Pojo\LoginRequest.class
+io\Pojo\AddProductResponse.class
+io\Pojo\OrderDetails.class
+io\Pojo\Product.class
